@@ -15,8 +15,8 @@ import random
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-transform = transforms.Compose(
+transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.5,], std=[0.5,]) # I think images in black and white
-)
+])
 
