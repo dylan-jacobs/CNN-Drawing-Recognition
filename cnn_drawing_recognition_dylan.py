@@ -20,3 +20,5 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.5,], std=[0.5,]) # I think images in black and white
 ])
 
+
+# %%
